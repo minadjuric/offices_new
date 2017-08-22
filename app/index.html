@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Offices</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/scripts/Pages.js"></script>
+    <script src="assets/scripts/ListGrid.js"></script>
+    <script src="assets/scripts/Map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbUFzVR4l2LsETq0Af07-ZLxOsMax71wU&callback=initMap"></script>
+
+    
+    <style>
+        .hide
+        {
+            display: none;
+        }
+
+  
+         #mapWindow {
+           width: 100%;
+           height: 400px;
+           background-color: grey;
+         }
+
+    </style> 
+</head>
+<body>
+
+    <header>
+        <h1>Offices</h1>
+        <button id="showListBtn" data-launch-view="list">List</button>
+        <button id="showGridBtn" data-launch-view="grid">Grid</button>
+        <button id="showMapBtn" data-launch-view="map">Map</button>
+    </header>
+
+    <div id="offices">
+
+    <div class="view" id="list">
+            <h1>List</h1>
+            <ul class="officesList">
+            </ul>
+        </div>
+        
+    <div class="view hide" id="grid">
+            <h1>Grid</h1>
+            <ul class="officesList">
+            </ul>
+        </div>
+
+    <div class="view hide" id="map">
+            <h1>Map</h1>
+            <div id="mapWindow"></div>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
