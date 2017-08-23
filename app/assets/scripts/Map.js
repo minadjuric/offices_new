@@ -1,8 +1,20 @@
 function initMap() {
 
 var map = new google.maps.Map(document.getElementById('mapWindow'), {
-              center: new google.maps.LatLng(51.50, 0.11),
-              zoom: 4
+              center: new google.maps.LatLng(70.71, -3),
+              draggable: true,
+              zoom: 3
+});
+
+var center;
+function calculateCenter() {
+  center = map.getCenter();
+}
+google.maps.event.addDomListener(map, 'idle', function() {
+  calculateCenter();
+});
+google.maps.event.addDomListener(window, 'resize', function() {
+  map.setCenter(center);
 });
 
 

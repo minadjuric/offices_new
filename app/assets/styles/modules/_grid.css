@@ -1,0 +1,121 @@
+#grid .officeName{
+	font-weight: bold;
+}
+
+#grid .office{
+	background-color: #ffffff;
+	height: 13.75rem;
+	width: 13.75rem;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#grid .officeText{
+	padding: 4.375rem 0.125rem;
+	text-align: center;
+}
+
+#grid .officePhoto {
+	display: block;
+}
+
+@media only screen and (min-width: 500px) {
+	#grid ul {
+		columns: 2;
+	}
+
+	#grid .office {
+		height: 13rem;
+		width: 13rem;
+	}
+	
+}
+
+@media only screen and (min-width: 800px) {
+	#grid ul {
+		columns: 3;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#grid ul {
+		columns: 4;
+	}
+	#grid .office {
+		height: 14rem;
+		width: 14rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+	#grid .office {
+		height: 17rem;
+		width: 17rem;
+	}
+
+	#grid .officeText{
+		padding: 6rem 0.125rem;
+		font-size: 1.25rem;
+	}
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+	#grid .office {
+		height: 19.5rem;
+		width: 19.5rem;
+	}
+
+	#grid .officeText {
+		margin-top: 0.4375rem;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+
+	#grid .office {
+		height: 21rem;
+		width: 21rem;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+
+	#grid .office {
+		height: 23rem;
+		width: 23rem;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+
+	#grid .office {
+		height: 25rem;
+		width: 25rem;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+
+	#grid .office {
+		height: 26rem;
+		width: 26rem;
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+
+	#grid .office {
+		height: 27rem;
+		width: 27rem;
+	}
+
+	#grid .officeText {
+		margin-top: 2rem;
+	}
+
+}
