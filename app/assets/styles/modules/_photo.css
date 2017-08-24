@@ -20,7 +20,7 @@ img {
 }
 
 #grid .officePhoto {
-	margin-left: 5rem;
+	margin-left: 4.5rem;
 	margin-top: 1.25rem;
 
 }
@@ -28,7 +28,7 @@ img {
 @media only screen and (min-width: 1200px) {
 
 	#grid .officePhoto {
-		margin-left: 7rem;
+		margin-left: 6rem;
 		margin-bottom: 0.625rem;
 		width: 70px;
 		height: 70px;
@@ -54,7 +54,7 @@ img {
 @media only screen and (min-width: 1500px) {
 
 	#grid .officePhoto {
-		margin-left: 8rem;
+		margin-left: 7.5rem;
 	}
 
 }
@@ -62,7 +62,7 @@ img {
 @media only screen and (min-width: 1600px) {
 
 	#grid .officePhoto {
-		margin-left: 9rem;
+		margin-left: 8.5rem;
 	}
 
 }
@@ -70,7 +70,12 @@ img {
 @media only screen and (min-width: 1700px) {
 
 	#grid .officePhoto {
-		margin-left: 10rem;
+		margin-left: 9.5rem;
 	}
 
+@media only screen and (min-width: 1900px) {
+
+	#grid .officePhoto {
+		margin-left: 10.5rem;
+	}
 }

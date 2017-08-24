@@ -1,13 +1,15 @@
 ul { 
   list-style: none; 
   background-color: #00bcd4;
-  padding: 1rem 1rem;
+  padding: 2rem 1.25rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
 
 #list .officeName {
 	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #list .officeDescription {
@@ -16,6 +18,7 @@ ul {
 	text-overflow: ellipsis;
   	white-space: nowrap;
   	overflow: hidden;
+  	margin-top: 0.625rem;
 }
 
 #list .officeText {
