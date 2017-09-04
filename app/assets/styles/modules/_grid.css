@@ -17,10 +17,19 @@
 #grid .officeText{
 	padding: 4.375rem 0.125rem;
 	text-align: center;
+	display: block;
 }
 
 #grid .officePhoto {
 	display: block;
+}
+
+#grid .officeDescription {
+	overflow : hidden;
+  	text-overflow: ellipsis;
+  	display: -webkit-box;
+	  -webkit-line-clamp: 5;
+	  -webkit-box-orient: vertical;
 }
 
 @media only screen and (min-width: 500px) {
@@ -62,6 +71,10 @@
 		padding: 6rem 0.125rem;
 		font-size: 1.25rem;
 	}
+
+	#grid .officeDescription{
+		-webkit-line-clamp: 4;
+	}
 }
 
 
@@ -75,6 +88,10 @@
 	#grid .officeText {
 		margin-top: 0.4375rem;
 	}
+
+	#grid .officeDescription{
+		-webkit-line-clamp: 5;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
@@ -83,6 +100,10 @@
 		height: 21rem;
 		width: 21rem;
 	}
+
+	#grid .officeDescription{
+		-webkit-line-clamp: 6;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
@@ -90,6 +111,9 @@
 	#grid .office {
 		height: 23rem;
 		width: 23rem;
+	}
+	#grid .officeDescription{
+		-webkit-line-clamp: 7;
 	}
 }
 
@@ -118,6 +142,10 @@
 
 	#grid .officeText {
 		margin-top: 2rem;
+	}
+
+	#grid .officeDescription{
+		-webkit-line-clamp: 9;
 	}
 
 }
