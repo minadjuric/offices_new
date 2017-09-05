@@ -15,7 +15,7 @@
 }
 
 #grid .officeText{
-	padding: 4.375rem 0.125rem;
+	padding: 4.375rem .125rem;
 	text-align: center;
 	display: block;
 }
@@ -33,6 +33,7 @@
 }
 
 @media only screen and (min-width: 500px) {
+
 	#grid ul {
 		columns: 2;
 	}
@@ -41,19 +42,21 @@
 		height: 13rem;
 		width: 13rem;
 	}
-	
 }
 
 @media only screen and (min-width: 800px) {
+
 	#grid ul {
 		columns: 3;
 	}
 }
 
 @media only screen and (min-width: 1000px) {
+
 	#grid ul {
 		columns: 4;
 	}
+
 	#grid .office {
 		height: 14rem;
 		width: 14rem;
@@ -68,7 +71,7 @@
 	}
 
 	#grid .officeText{
-		padding: 6rem 0.125rem;
+		padding: 6rem .125rem;
 		font-size: 1.25rem;
 	}
 
@@ -86,7 +89,7 @@
 	}
 
 	#grid .officeText {
-		margin-top: 0.4375rem;
+		margin-top: .4375rem;
 	}
 
 	#grid .officeDescription{
@@ -112,6 +115,7 @@
 		height: 23rem;
 		width: 23rem;
 	}
+
 	#grid .officeDescription{
 		-webkit-line-clamp: 7;
 	}
@@ -147,5 +151,4 @@
 	#grid .officeDescription{
 		-webkit-line-clamp: 9;
 	}
-
 }

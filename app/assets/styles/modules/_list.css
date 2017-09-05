@@ -1,9 +1,9 @@
 ul { 
-  list-style: none; 
-  background-color: #00bcd4;
-  padding: 2rem 1.25rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+	list-style: none; 
+	background-color: #00bcd4;
+	padding: 2rem 1.25rem;
+	margin-left: 1.25rem;
+	margin-right: 1.25rem;
 }
 
 #list .officeName {
@@ -13,30 +13,31 @@ ul {
 }
 
 #list .officeDescription {
-	padding-bottom: 0.9375rem;
-	border-bottom: 0.03125rem solid #808080;
+	padding-bottom: .9375rem;
+	border-bottom: .03125rem solid #808080;
 	text-overflow: ellipsis;
   	white-space: nowrap;
   	overflow: hidden;
-  	margin-top: 0.625rem;
+  	margin-top: .625rem;
 }
 
 #list .officeText {
 	text-align: left;
-	font-size: 0.8125rem;
+	font-size: .8125rem;
 	padding-left: 4rem;
 }
 
 @media only screen and (min-width: 400px) {
+
 	#list .officeText {
 		padding-bottom: 1.25rem;
-		font-size: 0.875rem;
+		font-size: .875rem;
 	}
 }
 
 
 @media only screen and (min-width: 700px) {
-	
+
 	#list  .officeText {
 		font-size: 1.225rem;
 	}

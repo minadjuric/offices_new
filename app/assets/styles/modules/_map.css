@@ -1,7 +1,8 @@
 #mapWindow {
-	height: 50rem;
 	background-color: grey;
+	height: 50rem;
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
 	margin-top: 1rem;
 }
+

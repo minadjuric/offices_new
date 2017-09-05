@@ -44,12 +44,13 @@ function showView(viewName) {
 
 function renderAvatar(office) {
 	return  office.photo != null ? "<div class='officePhoto'><img src='"  + office.photo + "'></div>"
-		: "<div class='officePhoto noPhoto'>" + "<br/>" + office.name.charAt(0) + "</div>";
+		: "<div class='officePhoto noPhoto'>" + "<br>" + office.name.charAt(0) + "</div>";
 }
 
 function displayOffices(officesData) {
 	for(var i = 0; i < officesData.length; i++) {
-		$(".officesList").append("<li><div class='office'>" + renderAvatar(officesData[i]) + "<div class='officeText'><p class='officeName'>" + officesData[i].name + "</p>" + "<p class='officeDescription'>" + officesData[i].description + "</p></div></div></li>");
+		$(".officesList").append("<li><div class='office'>" + renderAvatar(officesData[i]) + "<div class='officeText'><p class='officeName'>" + 
+			officesData[i].name + "</p>" + "<p class='officeDescription'>" + officesData[i].description + "</p></div></div></li>");
 	}
 }
 
@@ -76,13 +77,13 @@ function initMap(officesData) {
 	    	title: name
     	});
 
-    	marker.mycontent = "<div id='officeMarker'>" + renderAvatar(officesData[i]) + "</div>"
+    	marker.mycontent = "<div id='officeMarker'><span class='markerName'>" + officesData[i].name + 
+    		"</span>" + renderAvatar(officesData[i]) + "</div>"
 		
 		marker.addListener('click', function() {
             infowindow.setContent(this.mycontent);
             infowindow.open(map, this);
         });
-
 	}
 
 	google.maps.event.addDomListener(map, 'idle', function() {

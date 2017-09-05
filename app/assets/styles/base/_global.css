@@ -3,12 +3,11 @@
 }
 
 body {
-	font-family: "Ubuntu", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: #545454;
 }
 
-.hide
-	{
-	    display: none;
-	}
+.hide {
+	display: none;
+}
 

@@ -13,15 +13,13 @@ h1 {
 	padding-top: 1.3rem;
 	height: 1.875rem;
 	margin: auto;
-
 }
 
 .buttons {
   	display: inline-block;
 	float: right;
-	padding-top: 0.6rem;
-	padding-right: 0.5rem;
-
+	padding-top: .6rem;
+	padding-right: .5rem;
 }
 
 button {
@@ -33,7 +31,7 @@ button {
 }
 
 button:focus {
-	border-bottom: 0.125rem solid #91e178;
+	border-bottom: .125rem solid #91e178;
 	outline: none;
 }
 
@@ -69,7 +67,7 @@ button:focus {
 
 	h1 {
 		font-size: 3rem;
-		padding-top: 0.5rem;
+		padding-top: .5rem;
 	}
 	
 	.buttons {
@@ -98,7 +96,6 @@ button:focus {
 	.buttons {
 		padding-right: 15.625rem;
 	}
-
 }
 
 @media only screen and (min-width: 1400px) {
@@ -106,7 +103,6 @@ button:focus {
 	.buttons {
 		padding-right: 28.125rem;
 	}
-
 }
 
 @media only screen and (min-width: 1600px) {
@@ -114,5 +110,4 @@ button:focus {
 	.buttons {
 		padding-right: 37.5rem;
 	}
-
 }

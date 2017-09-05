@@ -1,60 +1,62 @@
 <!DOCTYPE html>
  
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Offices</title>
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Offices</title>
 </head>
+
 <body>
 
-    <header>
-        <h1>Offices</h1>
-        <div class="buttons">
-            <button id="showListBtn" data-launch-view="list">List</button>
-            <button id="showGridBtn" data-launch-view="grid">Grid</button>
-            <button id="showMapBtn" data-launch-view="map">Map</button>
-        </div>
-    </header>
+  <header>
+    <h1>Offices</h1>
+      <div class="buttons">
+        <button id="showListBtn" data-launch-view="list">List</button>
+        <button id="showGridBtn" data-launch-view="grid">Grid</button>
+        <button id="showMapBtn" data-launch-view="map">Map</button>
+      </div>
+  </header>
 
-    <div class="sk-fading-circle">
-      <div class="sk-circle1 sk-circle"></div>
-      <div class="sk-circle2 sk-circle"></div>
-      <div class="sk-circle3 sk-circle"></div>
-      <div class="sk-circle4 sk-circle"></div>
-      <div class="sk-circle5 sk-circle"></div>
-      <div class="sk-circle6 sk-circle"></div>
-      <div class="sk-circle7 sk-circle"></div>
-      <div class="sk-circle8 sk-circle"></div>
-      <div class="sk-circle9 sk-circle"></div>
-      <div class="sk-circle10 sk-circle"></div>
-      <div class="sk-circle11 sk-circle"></div>
-      <div class="sk-circle12 sk-circle"></div>
-    </div>
+  <div class="sk-fading-circle">
+    <div class="sk-circle1 sk-circle"></div>
+    <div class="sk-circle2 sk-circle"></div>
+    <div class="sk-circle3 sk-circle"></div>
+    <div class="sk-circle4 sk-circle"></div>
+    <div class="sk-circle5 sk-circle"></div>
+    <div class="sk-circle6 sk-circle"></div>
+    <div class="sk-circle7 sk-circle"></div>
+    <div class="sk-circle8 sk-circle"></div>
+    <div class="sk-circle9 sk-circle"></div>
+    <div class="sk-circle10 sk-circle"></div>
+    <div class="sk-circle11 sk-circle"></div>
+    <div class="sk-circle12 sk-circle"></div>
+  </div>
 
 
-    <div id="offices">
+  <div id="offices">
 
     <div class="view" id="list">
-            <ul class="officesList">
-            </ul>
-        </div>
+      <ul class="officesList">
+      </ul>
+    </div>
         
     <div class="view hide" id="grid">
-            <ul class="officesList">
-            </ul>
-        </div>
+      <ul class="officesList">
+      </ul>
+    </div>
 
     <div class="view hide" id="map">
-            <div id="mapWindow"></div>
-        </div>
-
+      <div id="mapWindow"></div>
     </div>
-    
 
-    <script src="assets/scripts/App.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbUFzVR4l2LsETq0Af07-ZLxOsMax71wU&"></script>
+  </div>
+  
+  <script src="assets/scripts/App.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbUFzVR4l2LsETq0Af07-ZLxOsMax71wU&"></script>
+
 </body>
+
 </html>
