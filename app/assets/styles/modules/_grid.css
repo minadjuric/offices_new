@@ -33,11 +33,9 @@
 }
 
 @media only screen and (min-width: 500px) {
-
 	#grid ul {
 		columns: 2;
 	}
-
 	#grid .office {
 		height: 13rem;
 		width: 13rem;
@@ -45,18 +43,15 @@
 }
 
 @media only screen and (min-width: 800px) {
-
 	#grid ul {
 		columns: 3;
 	}
 }
 
 @media only screen and (min-width: 1000px) {
-
 	#grid ul {
 		columns: 4;
 	}
-
 	#grid .office {
 		height: 14rem;
 		width: 14rem;
@@ -64,17 +59,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
 	#grid .office {
 		height: 17rem;
 		width: 17rem;
 	}
-
 	#grid .officeText{
 		padding: 6rem .125rem;
 		font-size: 1.25rem;
 	}
-
 	#grid .officeDescription{
 		-webkit-line-clamp: 4;
 	}
@@ -82,47 +74,39 @@
 
 
 @media only screen and (min-width: 1400px) {
-
 	#grid .office {
 		height: 19.5rem;
 		width: 19.5rem;
 	}
-
 	#grid .officeText {
 		margin-top: .4375rem;
 	}
-
 	#grid .officeDescription{
 		-webkit-line-clamp: 5;
 	}
 }
 
 @media only screen and (min-width: 1500px) {
-
 	#grid .office {
 		height: 21rem;
 		width: 21rem;
 	}
-
 	#grid .officeDescription{
 		-webkit-line-clamp: 6;
 	}
 }
 
 @media only screen and (min-width: 1600px) {
-
 	#grid .office {
 		height: 23rem;
 		width: 23rem;
 	}
-
 	#grid .officeDescription{
 		-webkit-line-clamp: 7;
 	}
 }
 
 @media only screen and (min-width: 1700px) {
-
 	#grid .office {
 		height: 25rem;
 		width: 25rem;
@@ -130,7 +114,6 @@
 }
 
 @media only screen and (min-width: 1800px) {
-
 	#grid .office {
 		height: 26rem;
 		width: 26rem;
@@ -138,16 +121,13 @@
 }
 
 @media only screen and (min-width: 1900px) {
-
 	#grid .office {
 		height: 27rem;
 		width: 27rem;
 	}
-
 	#grid .officeText {
 		margin-top: 2rem;
 	}
-
 	#grid .officeDescription{
 		-webkit-line-clamp: 9;
 	}

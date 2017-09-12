@@ -25,55 +25,45 @@ img {
 }
 
 @media only screen and (min-width: 1200px) {
-
 	#grid .officePhoto {
 		margin-left: 6rem;
 		margin-bottom: .625rem;
 		width: 70px;
 		height: 70px;
 	}
-
 	#grid .noPhoto {
 		font-size: 1.5625rem;
 	}
 }
 
 @media only screen and (min-width: 1400px) {
-
 	#grid .officePhoto {
 		width: 90px;
 		height: 90px;
 	}
-
 	#grid .noPhoto {
 		font-size: 2rem;
 	}
 }
 
 @media only screen and (min-width: 1500px) {
-
 	#grid .officePhoto {
 		margin-left: 7.5rem;
 	}
-
 }
 
 @media only screen and (min-width: 1600px) {
-
 	#grid .officePhoto {
 		margin-left: 8.5rem;
 	}
-
 }
 
 @media only screen and (min-width: 1700px) {
-
 	#grid .officePhoto {
 		margin-left: 9.5rem;
 	}
 
 @media only screen and (min-width: 1900px) {
-
 	#grid .officePhoto {
 		margin-left: 10.5rem;
 	}

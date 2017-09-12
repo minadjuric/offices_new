@@ -28,7 +28,6 @@ ul {
 }
 
 @media only screen and (min-width: 400px) {
-
 	#list .officeText {
 		padding-bottom: 1.25rem;
 		font-size: .875rem;
@@ -37,9 +36,7 @@ ul {
 
 
 @media only screen and (min-width: 700px) {
-
 	#list  .officeText {
 		font-size: 1.225rem;
 	}
 }
-

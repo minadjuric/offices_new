@@ -1,17 +1,12 @@
 var officesData = [];
 $(document).ready(function() {
-
 	loadDataFromServer();
-
 	$('[data-launch-view]').click(function (e) {
-        e.preventDefault();
-        var viewName = $(this).attr('data-launch-view');
-        showView(viewName);
-    });
-
+	    e.preventDefault();
+	    var viewName = $(this).attr('data-launch-view');
+	    showView(viewName);
+	});
 });
-
-
 
 function loadDataFromServer() {
 	$.ajax({
@@ -24,7 +19,6 @@ function loadDataFromServer() {
 			}
 			displayOffices(officesData);
 			$('.sk-fading-circle').addClass('hide');
-			
 		},
 		error: function () {
 			console.log("Web service is not available");
@@ -32,7 +26,6 @@ function loadDataFromServer() {
 		}
 	});
 }
-
 
 function showView(viewName) {
     $('.view').hide();
@@ -55,53 +48,31 @@ function displayOffices(officesData) {
 }
 
 function initMap(officesData) {
-
 	var map = new google.maps.Map(document.getElementById('mapWindow'), {
         center: new google.maps.LatLng(30, -3),
         zoom: 3
     });
-
-	var center;
     var infowindow = new google.maps.InfoWindow();
-
 	for(var i = 0; i < officesData.length; i++) {
 		var name = officesData[i].name;
 		var lat = officesData[i].latitude;
 		var lng = officesData[i].longitude;
 		var myLatLng = new google.maps.LatLng(lat, lng);
-
-
     	var marker = new google.maps.Marker({
 	    	position: myLatLng,
 	    	map: map,
 	    	title: name
     	});
-
-    	marker.mycontent = "<div id='officeMarker'><span class='markerName'>" + officesData[i].name + 
+    	marker.mycontent = "<div id='officeMarker'><span class='markerName'>" + name + 
     		"</span>" + renderAvatar(officesData[i]) + "</div>"
-		
 		marker.addListener('click', function() {
             infowindow.setContent(this.mycontent);
             infowindow.open(map, this);
         });
 	}
-
-	google.maps.event.addDomListener(map, 'idle', function() {
-        calculateCenter();
-    });
-
+    var center = map.getCenter();
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(center);
     });
-
-    function calculateCenter() {
-        center = map.getCenter();
-    }
 }
-
-
-
-
-
-
 
